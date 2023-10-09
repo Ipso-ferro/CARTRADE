@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+  <body class="bg-gray-100">
+
+    <!-- NAV BAR -->
+
+
+    <nav id='nav_bar' class="hidden bg-white p-4 fixed top-0 left-0 w-full shadow-lg z-50">
+      <a href=""><div class="flex items-center justify-center">
+          <span class="text-4xl text-gray-900 font-semibold mr-4">CAR</span>
+          <span class="text-4xl text-blue-600 font-semibold mr-4">TADE</span>
+      </div></a>
+      <div class="text-center mt-1 flex items-center justify-center">
+          <a href="#initial-page"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNlVGuJTlq_Ey6Q8m_3xtifnZVygkag_SVSQ&usqp=CAU'lt="Carrito de Compras" class="rounded-full h-12 object-fill mr-5"></a>
+      </div>
+  </nav>
+
+
+  <!-- CARRUSEL IMAGES -->
+
+
+
+
+      <div id='pagina_donde_se_cargan_los_carros' class="hidden px-5 pb-5 bg-gray-100 min-h-screen flex items-center justify-center gap-4 flex-wrap" style="margin-top: 3%; padding: 5%;">
+      <div>
+      <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">MEJOR EN <span class="text-blue-600 dark:text-blue-500">CAR-TRADE</span></h1>
+          <a href="#" class="text-indigo-500 font-bold">
+            <span id="abre_modo_grid" class="bg-indigo-500 text-white px-2 py-1 rounded justify-center flex cursor-pointer transition duration-300 ease-in-out hover:bg-indigo-600 transform hover:-translate-y-1">Ver en GRID</span>
+          </a>
+      </div>
+      <div><button id="prevButton" class="carousel-button-prev">&lt;</button></div>
+      <div id=Cargar_carros_image_scroll class="bg-indigo-500 text-white rounded-lg shadow-lg p-6 animate-fade animate-ease-in" style="width: 600px;">
+        <div id="CargarCarrosCarrusel" class="carousel">
+          <div class="carousel-content"></div>
+        </div>
+      </div>
+      <div><button id="nextButton" class="carousel-button-next">&gt;</button></div>
+    </div>
+
+    <!-- EN GRID -->
+
+
+    <div id="cars_page_grid" class="hidden grid grid-cols-3 gap-5" style="margin-top: 3%; padding: 5%;">
+
+    </div>
+    
+    <!-- LANDING -->
+
+
+      <div id='initial-page' class="animate-jump-in animate-once animate-ease-in animate-normal bg-gray-100 min-h-screen flex items-center justify-center ">
+        <div class="max-w-xl mx-auto p-8 bg-white shadow-lg rounded-lg">
+          <h1 class="text-4xl font-bold mb-4">BIENVENIDOS A CAR <span class="text-blue-500">TRADE</span></h1>
+          <div class="flex justify-center">
+            <a id="boton_comprar_carro" href="#" class="bg-indigo-500 text-white px-6 py-3 rounded mr-4">COMPRAR CARRO</a>
+            <a id='boton_vender_carro'href="#" class="bg-gray-500 text-white px-6 py-3 rounded">VENDER TU CARRO</a>
+          </div>
+        </div>
+      </div>
+          
+
+      <!-- POP-UP -->
+
+
+      <div id="pop_up" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="animate-fall rounded bg-white p-6 shadow-lg">
+          <h1 class="mb-9 text-3xl font-bold" id="popupTitle">Estas son las marcas que tenemos disponibles:</h1>
+          <div id="marcas_sin_duplicados_impresas_en_pantalla">
+            <ul class="grid grid-cols-3 text-center gap-10" >
+            </ul>
+          </div>
+          <button class="mx-auto mt-8 block rounded bg-indigo-500 px-4 py-2 text-white" id="buton_cerrar">Cerrar</button>
+        </div>
+      </div>
+
+
+      <!-- POP-UP caracteristicas-->
+
+
+      <div id="pop_up_caracteristicas" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="animate-fall rounded bg-white p-6 shadow-lg">
+          <h1 class="mb-9 text-3xl font-bold" id="popupTitle">Caracteristicas:</h1>
+          <div id="caracteristicas_entra_a_pantalla">
+            <ul class="grid grid-cols-3 text-center gap-10" >
+            </ul>
+          </div>
+          <button class="mx-auto mt-8 block rounded bg-indigo-500 px-4 py-2 text-white" id="buton_cerrar">Cerrar</button>
+        </div>
+      </div>
+
+
+
+      
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="../js/js.js"></script>
+</body>
+</html>
+
+
